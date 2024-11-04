@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Telefonos</title>
+    <link rel="stylesheet" href="styles telefono.css">
+</head>
+<body>
+    <!-- Barra de Navegación -->
+    <header>
+        <nav class="navbar">
+            <div class="logo"><img src="logo.png" alt="logo img"></div>
+            <ul class="nav-links">
+                <li class="nav-item"><a href="index.html">Home</a>
+                    <ul class="submenu">
+                        <li><a href="mica.html">Mica</a></li>                        
+                        <li><a href="telefono.html">Teléfono</a></li>
+                        <li><a href="Cargador.html">Cargadores</a></li>
+                        <li><a href="cover.html">Cover</a></li>
+                        <li><a href="audifono.html">Audífono</a></li>
+                        <li><a href="otros.html">Otros...</a></li>
+                    </ul>
+                </li>
+                
+                <li class="nav-item"><a href="contacto.html">Contacto</a></li>
+                <li class="nav-item"><a href="#">Taza de Cambio</a>
+                    <ul class="submenu">
+                        <h>1 USD- 320 CUP</h>
+                        <li><a href="https://eltoque.com/tasas-de-cambio-de-moneda-en-cuba-hoy">ir a El Toque</a></li>
+                    </ul>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main>
+        <div class="productos-container">
+            <!-- Recuadros de productos -->
+            <div class="producto" id="producto1">
+                <img src="galaxy a15 1.jfif" alt="Producto 1">
+                <button onclick="toggleMenu('menu1')">Sansung Galaxy A15</button>
+                <div id="menu1" class="menu">
+                    <p>Sansung Galaxy A015. Memoria Ram: 6 GB. Almacenamiento: 128 GB: 1 unidad - 170 USD, a partir de 5 unidades - 155 USD</p>
+                    <input type="number" id="cantidad1" placeholder="Cantidad">
+                    <button onclick="agregarProducto('Sansung Galaxy A15', 170, 155, 'cantidad1')">Agregar</button>
+                </div>
+            </div>
+            
+            <!-- Repetir para los otros 24 productos -->
+            <!-- Ejemplo para el segundo producto -->
+            <div class="producto" id="producto2">
+                <img src="galaxy a05 3.webp" alt="Producto 2">
+                <button onclick="toggleMenu('menu2')">Sansung Galaxy A05</button>
+                <div id="menu2" class="menu">
+                    <p>Sansung Galaxy A05. Memoria Ram: 4 GB. Almacenamiento: 64 GB: 1 unidad - 130 USD, a partir de 5 unidades - 115 USD</p>
+                    <input type="number" id="cantidad2" placeholder="Cantidad">
+                    <button onclick="agregarProducto('Sansung Galaxy A05', 130, 115, 'cantidad2')">Agregar</button>
+                </div>
+            </div>
+
+            <div class="producto" id="producto3">
+                <img src="05s.webp" alt="Producto 3">
+                <button onclick="toggleMenu('menu3')">Sansung Galaxy 05S</button>
+                <div id="menu3" class="menu">
+                    <p>Sansung Galaxy 05S. Memoria Ram: 4 GB. Almacenamiento: 64 GB: 1 unidad - 140 USD, a partir de 5 unidades - 125 USD</p>
+                    <input type="number" id="cantidad3" placeholder="Cantidad">
+                    <button onclick="agregarProducto('Sansung Galaxy 05S', 140, 125, 'cantidad3')">Agregar</button>
+                </div>
+            </div>
+
+            <div class="producto" id="producto4">
+                <img src="a05s.jpg" alt="Producto 4">
+                <button onclick="toggleMenu('menu4')">Sansung Galaxy A05S</button>
+                <div id="menu4" class="menu">
+                    <p>Sansung Galaxy A05S. Memoria Ram: 4 GB. Almacenamiento: 128 GB: 1 unidad - 160 USD, a partir de 5 unidades - 145 USD</p>
+                    <input type="number" id="cantidad4" placeholder="Cantidad">
+                    <button onclick="agregarProducto('Sansung Galaxy A05S', 160, 145, 'cantidad4')">Agregar</button>
+                </div>
+            </div>
+
+            <div class="producto" id="producto5">
+                <img src="note 11.jpg" alt="Producto 5">
+                <button onclick="toggleMenu('menu5')">Xiaomi Redmi Note 11</button>
+                <div id="menu5" class="menu">
+                    <p>Xiaomi Redmi Note 11. Memoria Ram: 6 GB. Almacenamiento: 128 GB: 1 unidad - 140 USD, a partir de 5 unidades - 125 USd</p>
+                    <input type="number" id="cantidad5" placeholder="Cantidad">
+                    <button onclick="agregarProducto('Xiaomi Redmi Note 11', 140, 125, 'cantidad5')">Agregar</button>
+                </div>
+            </div>
+
+            <div class="producto" id="producto6">
+                <img src="note 13.jpg" alt="Producto 6">
+                <button onclick="toggleMenu('menu6')">Xiaomi Redmi Note 13</button>
+                <div id="menu6" class="menu">
+                    <p>Xiaomi Redmi Note 13. Memoria Ram: 6 GB. Almacenamiento 128 GB : 1 unidad - 180 USD, a partir de 5 unidades - 165 USD</p>
+                    <input type="number" id="cantidad6" placeholder="Cantidad">
+                    <button onclick="agregarProducto('Xiaomi Redmi Note 13', 180, 165, 'cantidad6')">Agregar</button>
+                </div>
+            </div>
+
+            <div class="producto" id="producto7">
+                <img src="tecno pop7 3.jfif" alt="Producto 7">
+                <button onclick="toggleMenu('menu7')">Tecno Spark POP 7</button>
+                <div id="menu7" class="menu">
+                    <p>Tecno Spark POP 7. Memoria Ram: 2+2 GB. Almacenamiento: 64 GB: 1 unidad - 110 USD, a partir de 5 unidades - 95 USD</p>
+                    <input type="number" id="cantidad7" placeholder="Cantidad">
+                    <button onclick="agregarProducto('Tecno Spark POP 7', 110, 95, 'cantidad7')">Agregar</button>
+                </div>
+            </div>
+
+            <div class="producto" id="producto8">
+                <img src="xiaomi-redmi-a3-lte-64gb-3gb-ram-dual-sim-black.jpg" alt="Producto 8">
+                <button onclick="toggleMenu('menu8')">Xiaomi Redmi A3</button>
+                <div id="menu8" class="menu">
+                    <p>Xiaomi Redmi A3. Memoria Ram: 3 GB. Almacenamiento: 64 GB : 1 unidad - 120 USd, a partir de 5 unidades - 105 USD</p>
+                    <input type="number" id="cantidad8" placeholder="Cantidad">
+                    <button onclick="agregarProducto('Xiaomi Redmi A3', 120, 105, 'cantidad8')">Agregar</button>
+                </div>
+            </div>
+
+            
+            
+
+
+
+            <!-- Repetir hasta el producto 25 -->
+        </div>
+
+        <!-- Tabla de productos seleccionados -->
+        <table id="tabla-productos">
+            <thead>
+                <tr>
+                    <th>Producto</th>
+                    <th>Cantidad</th>
+                    <th>Precio</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+
+        <button id="calcular" onclick="calcularTotal()">Calcular Total</button>
+        <div id="total"></div>
+
+        <button id="solicitar" onclick="solicitarProductos()">Solicitar</button>
+
+    </main>
+
+    <script src="telefono-scrypt.js"></script>
+</body>
+</html>
